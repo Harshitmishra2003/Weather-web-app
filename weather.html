@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <!-- About Button -->
+    <button class="about-button" onclick="toggleAboutSection()">About</button>
+
+    <!-- About Section (Initially Hidden) -->
+    <div class="about-section" id="about-section">
+        <h3>About</h3>
+        <p><strong>Name:</strong> Harshit Mishra</p>
+        <p><strong>Use:</strong> This weather dashboard allows you to check current weather conditions for any city.</p>
+        <div class="contact-info">
+            <p><strong>Email:</strong> <a href="mailto:johndoe@example.com">hm4554126@gmail.com</a></p>
+            <p><strong>Contact No:</strong> +91 9770409139 </p>
+        </div>
+    </div>
+
+    <div class="search-bar-top">
+        <input type="text" id="top-city" placeholder="Search Google">
+        <button onclick="searchGoogle()">Search</button>
+    </div>
+    <div class="title">Welcome to the Weather App</div>
+    <div class="dashboard">
+        <div class="search-bar">
+            <input type="text" id="city" placeholder="Enter city name">
+            <button onclick="getWeather()">Search</button>
+        </div>
+        <div class="weather-info">
+            <div class="icon" id="weather-icon">☀</div>
+            <div class="temperature" id="temperature">-- °C</div>
+            <div class="condition" id="condition">--</div>
+            <div class="time" id="current-time">--</div>
+        </div>
+    </div>
+
+    <div class="city-list" id="city-list">
+        <!-- City weather details will be listed here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
